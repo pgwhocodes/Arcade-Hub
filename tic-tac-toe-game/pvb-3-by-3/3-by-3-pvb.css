@@ -265,11 +265,13 @@ main   {
         padding-bottom: 6vmin;
         padding-top: 6vmin;
         margin-top: 0;
+        font-size: 3.5vmin;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
     }
     .player-info-container  {
         flex-direction: row;
         column-gap: 10vmin;
+        font-size: 3vmin;
     }
     .player-1-div, .player-2-div   {
         box-shadow: 0 0 1rem #000000;

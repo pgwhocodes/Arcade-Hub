@@ -234,6 +234,12 @@ body    {
     width: 6.5vmin;
 }
 
+.link   {
+    text-decoration: none;
+    color: white;
+    -webkit-tap-highlight-color: transparent;
+}
+
 @media  (max-width: 570px) {
 
     .heading {
