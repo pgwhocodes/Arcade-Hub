@@ -133,6 +133,14 @@ main{
         flex-direction: column;
         gap: 10vmin;
     }
+    .mode-name {
+        font-size: 4vmin;
+        line-height: 14vmin;
+        width: 55vmin;
+    }
+    .mode-container  {
+        font-size: 3.5vmin;
+    }
     .game-box, .game-box-2 {
         gap: 2vmin;
         height: 30vmin;

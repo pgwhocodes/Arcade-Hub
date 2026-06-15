@@ -241,11 +241,12 @@ body    {
         line-height: 11vmin;
     } 
     .game-status {
-        font-size: 2.5vmin;
-        line-height: 3.6vmin;
+        font-size: 3vmin;
+        line-height: 4vmin;
     }
     #msg {
-        line-height: 7vmin;
+        font-size: 4vmin;
+        line-height: 8vmin;
     }
     .game-container {
         padding: 8vmin 4vmin 8vmin 4vmin;
