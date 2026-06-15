@@ -258,6 +258,9 @@ body    {
     .game-picks {
         gap: 5.5vmin;
     }
+    #user-pick-name, #bot-pick-name {
+        font-size: 3vmin;
+    }
     .vs {
         font-size: 5vmin;
     }
@@ -267,9 +270,17 @@ body    {
     .data   {
         height: 8vmin;
         width: 22vmin;
+        font-size: 2.5vmin;
+    }
+    #user-score, #bot-score    {
+        font-size: 4vmin;
+        margin: 0 0 0vmin 0;
     }
     .selection-box  {
         margin: 5.5vh 0 0 0;
+    }
+    .selection-divs, #new-game, #menu-btn   {
+        font-size: 3vmin;
     }
 
 }
