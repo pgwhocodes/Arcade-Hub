@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+body    {
+    background-color: #2a7e88;
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat';
+    position: relative;
+}
+
+header {
+    background-color: #28464B;
+    color: white;
+    font-size: 3vmin;
+    font-weight: bold;
+    line-height: 7vmin;
+    width: 100%;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 1);
+    text-shadow: 0 0 0.3rem rgba(255, 255, 255, 0.5);
+    position: fixed;
+    z-index: 1;
+} 
+
+
+main{
+    height: 98vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 9vmin;
+}
+
+.container   {
+    display: flex;
+    flex-direction: column;
+    gap: 10vmin;
+    background-color: #28464B;
+    padding: 7vmin 6vmin;
+    border-radius: 1.1rem;
+    box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.413);
+}
+
+.mode-name, .ins  {
+    background-color: #326771;
+    border: 0.1rem solid #326771;
+    font-size: 3vmin;
+    line-height: 9vmin;
+    width: 40vmin;
+    border-radius: 0.8rem;
+    text-shadow: 0 0 0.2rem rgb(255, 255, 255);
+    box-shadow: 0 0 0.4rem rgb(0, 0, 0);
+    transition: border-color 0.3s;
+}
+
+.mode-name:hover {
+    border-color: white;
+}
+
+.ins {
+    background-color: #28464B;
+    border-color: #326771;
+    border-radius: 1.3rem;
+    width: 60vmin;
+    line-height: 10vmin;
+    margin-bottom: 2vmin;
+}
+
+.link   {
+    text-decoration: none;
+    color: white;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media  (max-width: 600px)  {
+    header {
+        font-size: 4.3vmin;
+        line-height: 11vmin;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+    }
+    main    {
+        height: 95vh;
+        gap: 12vmin;
+    }
+    .container   {
+        gap: 13vmin;
+        padding: 8vmin 5.5vmin;
+    }
+    .mode-name, .ins  {
+        font-size: 3.3vmin;
+        line-height: 12vmin;
+        width: 50vmin;
+    }
+    .ins {
+        width: 65vmin;
+        line-height: 12vmin;
+        margin-bottom: 5vmin;
+    }
+}

@@ -1,0 +1,369 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+body    {
+    background-color: #2a7e88;
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat';
+    position: relative;
+}
+
+header {
+    background-color: #28464B;
+    color: white;
+    font-size: 3vmin;
+    font-weight: bold;
+    line-height: 7vmin;
+    width: 100%;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 1);
+    text-shadow: 0 0 0.3rem rgba(255, 255, 255, 0.5);
+    position: fixed;
+    z-index: 1;
+} 
+
+main   {
+    display: flex; 
+    flex: 1; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.info-container {
+    background-color: #28464B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10vmin;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 1);
+    padding: 5vmin;
+    padding-bottom: 13vmin;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    font-size: 3vmin;
+    margin-bottom: 2vmin;
+}
+
+.player-info-container   {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 12vmin;
+}
+
+.player-1-div, .player-2-div   {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 2.5vmin;
+    justify-content: center;
+    background-color: #326771;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+.player-1-div   {
+    padding: 3vmin 7.4vmin 3vmin 6.4vmin;
+}
+
+.player-2-div   {
+    padding: 2.5vmin 6.4vmin 2.5vmin 7.4vmin;
+}
+
+.user-img    {
+    height: 5vmin;
+    width: 5vmin;
+}
+
+.bot-img    {
+    height: 6vmin;
+    width: 6vmin;
+}
+
+.img{
+    height: 3.5vmin;
+    width: 3.5vmin;
+}
+
+#noughts-div, #cross-div    {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vmin;
+    width: 6vmin;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #326771;
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 1);
+    text-shadow: 0 0 0.2rem rgba(255, 255, 255, 1);
+}
+
+#noughts-div{
+    right: 11vmin;
+    bottom: -4vmin;
+}
+
+#cross-div{
+    left: 11.5vmin;
+    top: -4vmin;
+}
+
+.game-field {
+    height: 60vh;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5vmin 0 0 40vmin;
+}
+
+.game-container  {
+    height: 43vmin;
+    width: 43vmin;
+    background-color: #28464B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 1);
+    margin-top: 4vmin;
+}
+
+.game  {
+    height: 43vmin;
+    width: 43vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vmin;
+    justify-content: center;
+    align-content: center;
+    border-radius: 1rem;
+}
+
+.box  {
+    height: 11vmin;
+    width: 11vmin;
+    border-radius: 1rem;
+    border: 1vmin solid #326771;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+    background-color: #326771;
+}
+
+.button-container   {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vmin;
+    margin: 7vmin 0 0 0;
+}
+
+#new-game-btn, .btns  {
+    font-family: 'Montserrat';
+    height: 8vmin;
+    width: 32vmin;
+    border-radius: 3rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+    text-shadow: 0 0 1rem rgba(255, 255, 255, 0.9);
+    background-color: #326771;
+    color: white;
+    border: 2vmin 2vmin solid #326771;
+    font-size: 3vmin;
+    padding: 2vmin 2.5vmin 2.9vmin 2.5vmin;
+    cursor: pointer;
+    -webkit-tap-hightlight-color: transparent;
+}
+
+.link  {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.msg-container  {
+    height: 78vh;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1.5rem;
+    margin: 2vh 0 0 0;
+    position: fixed;
+    z-index: 1;
+}
+
+.hide   {
+    display: none;
+}
+
+.msg    {
+    font-size: 4.9vmin;
+    height: 12vh;
+    width: 55vw;
+    border-radius: 5rem;
+    display: flex;
+    padding: 0 0 0.6vmin 0;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+    text-shadow: 0 0 1rem rgba(255, 255, 255, 0.9);
+    background-color: #326771; 
+    padding: 2.7vh 4vw 3vh 4vw;
+}
+
+.msg-btns   {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 4vmin;
+    justify-content: center;
+}
+
+#play-again-btn, #cancel-btn  {
+    font-family: 'Montserrat';
+    height: 8vh;
+    width: 20vw;
+    border-radius: 5rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+    text-shadow: 0 0 1rem rgba(255, 255, 255, 0.9);
+    background-color: #326771;
+    color: white;
+    border: 2vmin 2vmin solid #326771; 
+    margin: 1vmin 0 8vmin 0;
+    font-size: 3.5vmin;
+    padding: 0 2vmin;
+    cursor: pointer;
+}
+
+@media  (max-width: 510px)  {
+    header {
+        font-size: 4.3vmin;
+        line-height: 11vmin;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+    } 
+    .info-container   {
+        position: relative;
+        flex-direction: column;
+        row-gap: 5vmin;
+        border-radius: 1rem;
+        height: 16vmin;
+        padding-bottom: 6vmin;
+        padding-top: 6vmin;
+        margin-top: 0;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+    }
+    .player-info-container  {
+        flex-direction: row;
+        column-gap: 10vmin;
+    }
+    .player-1-div, .player-2-div   {
+        box-shadow: 0 0 1rem #000000;
+    }
+    #noughts-div{
+        bottom: 2.9vmin;
+        right: -4vmin;
+    }
+    #cross-div{
+        top: 2.9vmin;
+        left: -4vmin;
+    }
+    #turn-msg    {
+        font-size: 4vmin;
+    }
+    .game-field {
+        margin: 4vmin 0 0 0;
+    }
+    .game-container {
+        margin-top: 7vmin;
+        height: 74vmin;
+        width: 74vmin;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+    }
+    .game   {
+        height: 74vmin;
+        width: 74vmin;
+        gap: 2vmin;
+    }
+    .box{
+        height: 20vmin;
+        width: 20vmin;
+    }
+    .button-container   {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 4.5vh 0 0 0;
+        gap: 6vmin;
+        width: 400px;
+    }
+    #new-game-btn, .btns  {
+        height: 6vh;
+        width: 32vw;
+        padding: 2vmin;
+    }    
+    .msg    {
+        height: 6vh;
+        margin: 0 0 10vmin 0;
+    }
+    #play-again-btn, #cancel-btn   {
+        width: 38vw;
+    }
+}
+
+@media (min-width: 1200px)  {
+
+    .game-field {
+        margin: 0;
+    }
+    .game-container {
+        margin-top: 7.5vmin;
+        height: 65vmin;
+        width: 65vmin;
+    }
+    .game   {
+        height: 65vmin;
+        width: 65vmin;
+    }
+    .box{
+        height: 16vmin;
+        width: 16vmin;
+    }    
+    .button-container   {
+        background-color: #28464B;
+        box-shadow: 0 0 2rem rgba(0, 0, 0, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 7vmin;
+        position: fixed;
+        right: 0;
+        height: 100%;
+        padding: 0 5.5vmin 5vmin 5.5vmin;
+    }
+    #new-game-btn, .btns {
+        padding: 2vmin 2.5vmin 2.5vmin 2.5vmin;
+        height: 10vmin;
+        width: 28vmin;
+    }
+    #play-again-btn, #cancel-btn   {
+        width: 20vw;
+    }
+
+}

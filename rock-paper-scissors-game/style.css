@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+body    {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(251, 222, 222);
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading {
+    background-color: rgb(242, 123, 123)/*rgb(244, 141, 141)*/;
+    color: white;
+    font-size: 3vmin;
+    font-weight: bold;
+    line-height: 7vmin;
+    width: 100%;
+    box-shadow: 0 0 1rem rgb(242, 123, 123)/*rgb(244, 141, 141)*/;
+    text-shadow: 0 0 2rem white;
+} 
+
+.game-content   {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    margin: -1.5vh 0 0 0;
+}
+
+.game-status {
+    font-size: 2vmin;
+    line-height: 3.2vmin;
+    color: rgb(255, 70, 70);
+}
+
+#msg {
+    font-size: 3.3vmin;
+    line-height: 6vmin;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 1vmin;
+    width: 75vmin; 
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 2.5vh 0 0 0;
+    padding: 3.8vmin;
+    border-radius: 3vmin;
+    color: rgb(242, 123, 123);
+    font-weight: bold;
+    background-color: rgb(255, 196, 196);
+    box-shadow: 0 0 1.5rem rgb(218, 123, 123);
+    text-shadow: 0 0 3rem rgb(255, 254, 254);
+}
+
+.game-picks {
+    display:flex; 
+    flex-direction: row; 
+    gap: 5vmin;
+}
+
+.vs {
+    font-size: 6vmin;
+    height: 19.3vmin;
+    width: 19.3vmin;
+    border-radius: 50%;
+    box-shadow: 0 0 1.5rem rgb(218, 123, 123);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#user-pick-img-div, #bot-pick-img-div   {
+    height: 8vmin;
+    width: 8vmin;
+    padding: 4vmin;
+    margin: 0 1vmin;
+    object-fit : cover;
+    border-radius: 50%;
+    background-color: rgb(242, 123, 123);
+    box-shadow: 0 0 1rem rgb(221, 72, 72);
+}
+
+.user-img, .pick-img , .bot-img, .pick-img  {
+    height: 7.7vmin;
+    width: 7.7vmin;
+    margin-top: 0.2vmin;
+}
+
+.pick-scissors-img {
+    height: 8vmin;
+    width: 8vmin;
+}
+
+.user-img, .bot-img {
+    opacity: 1;
+}  
+
+
+#user-pick-name, #bot-pick-name {
+    font-size: 2.5vmin;
+    margin: 1.8vmin 0 0 0;
+}
+
+.scores {
+    display: flex;
+    flex-direction: row; 
+    gap: 5vmin;
+    margin: 3vh 0 0 0;
+    padding: 0.5vmin;
+    border-radius: 3vmin;
+    text-shadow: 0 0 3rem rgb(255, 254, 254);
+    color: white;
+}
+
+.data   {
+    font-size: 2vmin;
+    background-color: rgb(242, 123, 123)/*rgb(244, 141, 141)*/;
+    box-shadow: 0 0 1rem rgb(221, 72, 72);
+    height: 6vmin;
+    width: 20vmin;
+    border-radius: 3vmin;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.7vmin;
+    font-weight: bold;
+}
+
+#user-score, #bot-score    {
+    font-size: 3vmin;
+    margin: 0 0 0.2vmin 0;
+}
+
+.symbol {
+    padding: 0 0 0.3vmin 0;
+}
+
+.selection-box  {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    margin: 4.5vh 0 0 0;
+}
+
+.selection-btns, .btns   {
+    border: none;
+    border-radius: 3vmin;
+    cursor: pointer;
+    background-color: rgb(255, 196, 196);
+    box-shadow: 0 0 1rem rgb(220, 141, 141);
+    padding: 1.7vmin;
+    text-shadow: 0 0 1rem rgb(255, 255, 255);
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btns   {
+    margin: 4.5vh 0 0 0;
+    width: 41.5vmin;
+}
+
+.btn-container  {
+    display: flex;
+    flex-direction: row;
+    gap: 5vmin;
+}
+
+.selection-divs, #new-game, #menu-btn  {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vmin;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    color: white;
+    border-radius: 3vmin;
+    font-size: 2.5vmin;
+    padding: 1.7vh 3vw 1.7vh 2.5vw;
+    font-weight: bold;
+    font-family:'Montserrat', sans-serif;
+    background-color: rgb(242, 123, 123)/*rgb(244, 141, 141)*/;
+    box-shadow: 0 0 1rem rgb(221, 72, 72);
+    text-shadow: 0 0 2rem white;
+}
+
+#new-game , #menu-btn  { 
+    padding: 1.5vh 4vmin 1.5vh 4vmin;
+    border-radius: 2.2vmin;
+    width: 30vmin;
+} 
+
+.selection-btns:active{
+    background-color: rgb(255, 184, 184);
+    box-shadow: 0 0 1rem rgb(240, 170, 170);
+    .selection-divs{
+        background-color: rgb(240, 109, 109);
+        transition: background-color 0.4s ease;
+    }
+}
+
+.btns:hover {
+    background-color: rgb(255, 184, 184);
+    box-shadow: 0 0 1rem rgb(240, 170, 170);
+    #new-game, #menu-btn{
+        background-color: rgb(240, 109, 109);
+        transition: background-color 0.4s ease;
+    }
+}
+
+#img-rock, #img-paper, #img-scissors   {
+    height: 6vmin;
+    width: 6vmin;
+    object-fit : cover;
+}
+
+#img-scissors {
+    height: 6.5vmin;
+    width: 6.5vmin;
+}
+
+@media  (max-width: 570px) {
+
+    .heading {
+        font-size: 4.3vmin;
+        line-height: 11vmin;
+    } 
+    .game-status {
+        font-size: 2.5vmin;
+        line-height: 3.6vmin;
+    }
+    #msg {
+        line-height: 7vmin;
+    }
+    .game-container {
+        padding: 8vmin 4vmin 8vmin 4vmin;
+        margin: 4vh 0 0 0;
+        gap: 3vmin;
+    }
+    .game-content {
+        margin: -8vh 0 0 0;
+    }
+    .game-picks {
+        gap: 5.5vmin;
+    }
+    .vs {
+        font-size: 5vmin;
+    }
+    .scores {
+        gap: 7vmin;
+    }
+    .data   {
+        height: 8vmin;
+        width: 22vmin;
+    }
+    .selection-box  {
+        margin: 5.5vh 0 0 0;
+    }
+
+}

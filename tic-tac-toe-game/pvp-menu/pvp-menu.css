@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+body    {
+    background-color: #2a7e88;
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Montserrat';
+    position: relative;
+}
+
+header {
+    background-color: #28464B;
+    color: white;
+    font-size: 3vmin;
+    font-weight: bold;
+    line-height: 7vmin;
+    width: 100%;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 1);
+    text-shadow: 0 0 0.3rem rgba(255, 255, 255, 0.5);
+    position: fixed;
+    z-index: 1;
+} 
+
+
+main{
+    height: 96vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 12vmin;
+}
+
+.mode-name  {
+    background-color: #28464B;
+    border: 0.1rem solid #326771;
+    font-size: 3.5vmin;
+    line-height: 12vmin;
+    width: 45vmin;
+    border-radius: 1rem;
+    text-shadow: 0 0 0.2rem rgb(255, 255, 255);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 1);
+}
+
+.container    {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8vmin;
+}
+
+.mode-container  {
+    background-color: #3e909e;
+    padding: 3vmin;
+    font-size: 3vmin;
+    display: flex;
+    flex-direction: column;
+    gap: 2vmin;
+    border-radius: 1rem;
+    border: 0.6vmin solid #3e909e;
+    box-shadow: 0 0 1rem rgb(0, 38, 48);
+    transition: background-color 0.5s, border-color 0.3s;
+}
+
+.mode-container:hover    {
+    background-color: #3c838e;
+    border-color: #28464B;
+}
+
+.game-box, .game-box-2   {
+    height: 30vmin;
+    width: 30vmin;
+    background-color: #28464B;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5vmin;
+    align-content: center;
+    justify-content: center;
+    border-radius: 0.9rem;
+}
+
+.game-box-2 {
+    gap: 1.5vmin;
+    border-radius: 0.6rem;
+}
+
+.box, .box-2    {
+    height: 7.5vmin;
+    width: 7.5vmin;
+    background-color: #326771;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat';
+}
+
+.box-2  {
+    height: 4vmin;
+    width: 4vmin;
+    border-radius: 0.3rem;
+}
+
+.link   {
+    text-decoration: none;
+    color: white;
+    -webkit-tap-highlight-color: transparent;
+}
+
+@media  (max-width: 550px)  {
+
+    header {
+        font-size: 4.3vmin;
+        line-height: 11vmin;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+    }
+    main    {
+        height: 100vh;
+        gap: 15vmin;
+    }
+    .container    {
+        flex-direction: column;
+        gap: 10vmin;
+    }
+    .game-box, .game-box-2 {
+        gap: 2vmin;
+        height: 30vmin;
+        width: 30vmin;
+    }
+    .game-box-2 {
+        gap: 1vmin;
+    }
+    .box {
+        height: 7vmin;
+        width: 7vmin;
+    }
+    .box-2 {
+        height: 4.5vmin;
+        width: 4.5vmin;
+    }
+
+}
+
+@media  (min-width: 830px)  {
+
+    .container     {
+        gap: 15vmin;
+    }
+    .mode-container  {
+        padding: 2vmin;   
+    }
+    .game-box, .game-box-2 {
+        gap: 2vmin;
+        height: 25vmin;
+        width: 25vmin;
+    }
+    .game-box-2 {
+        gap: 1vmin;
+    }
+    .box {
+        height: 6vmin;
+        width: 6vmin;
+    }
+    .box-2 {
+        height: 3.7vmin;
+        width: 3.7vmin;
+    }
+
+}

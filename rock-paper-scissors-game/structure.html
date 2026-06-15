@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--Heading-->
+    <div class="heading">Rock Paper Scissors</div>
+    <!---->
+
+    <div style="display: flex; justify-content: center; align-items: center; align-content: center; flex: 1;">
+        <div class="game-content">
+
+            <!--Game Status-->
+            <div class="game-status">
+                <div>GAME STATUS</div>
+                <div>ROUND - <span id="round-number">0</span></div>
+                <div id="msg">PICK YOUR MOVE AND START THE GAME!!</div>
+            </div>
+            <!---->
+
+            <!--Container-->
+            <div class="game-container">
+
+                <div class="game-picks">
+                    <div>
+                        <div id="user-pick-img-div"><img src="/images/user.png" class="user-img"></div>
+                        <div id="user-pick-name">YOU</div>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div>
+                        <div id="bot-pick-img-div"><img src="/images/bot.png" class="bot-img"></div>
+                        <div id="bot-pick-name">BOT</div>
+                    </div>
+                </div>
+                
+                <div class="scores">
+                    <div class="data">
+                        <div>YOU</div>
+                        <div class="symbol">-</div>
+                        <div id="user-score">0</div>
+                    </div>
+                    <div class="data">
+                        <div id="bot-score">0</div>
+                        <div class="symbol">-</div>
+                        <div>BOT</div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+
+            <!--Game Buttons-->
+            <div class="selection-box">
+                <button class="selection-btns" id=0>
+                    <div class="selection-divs">
+                        <img src="/images/rock.png" id="img-rock">
+                        <span class="choice-name">ROCK</span>
+                    </div>
+                </button>
+                <button class="selection-btns" id=1>
+                    <div class="selection-divs">
+                        <img src="/images/paper.png" id="img-paper">
+                        <span class="choice-name">PAPER</span>
+                    </div>
+                </button>
+                <button class="selection-btns" id=2>
+                    <div class="selection-divs">
+                        <img src="/images/scissors.png" id="img-scissors">
+                        <span class="choice-name">SCISSORS</span>
+                    </div>
+                </button>
+            </div>
+            <!---->
+
+            <!--New Game Button-->
+            <div class="btn-container">
+                <button class="btns">
+                    <div id="new-game">New Game</div>
+                </button>                
+                <a href="/home-page/home-page.html" class="link">
+                    <button class="btns">
+                        <div id="menu-btn">Arcade Hub</div></button></a>
+            </div>
+            <!---->
+
+        </div>
+    </div>
+    <script src="game-logic.js"></script>
+</body>
+</html>
