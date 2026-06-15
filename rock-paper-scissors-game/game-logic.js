@@ -29,7 +29,7 @@ const botPick = ()  =>  {
     botIndex = Math.floor(Math.random()*3);
     if(botOptions[botIndex] == botOptions[0])    {
         botPickName.innerText = "ROCK";
-        botPickImg.setAttribute("src","/images/rock.png");
+        botPickImg.setAttribute("src","../images/rock.png");
         botPickImg.classList.add("pick-img");
         botPickImg.classList.remove("bot-img");
         botPickImg.classList.remove("user-pick-scissors-img");
@@ -37,7 +37,7 @@ const botPick = ()  =>  {
     }    
     else if(botOptions[botIndex] == botOptions[1])    {
         botPickName.innerText = "PAPER";
-        botPickImg.setAttribute("src","/images/paper.png");
+        botPickImg.setAttribute("src","../images/paper.png");
         botPickImg.classList.add("pick-img");
         botPickImg.classList.remove("bot-img");
         botPickImg.classList.remove("pick-scissors-img");
@@ -45,7 +45,7 @@ const botPick = ()  =>  {
     }
     else    {
         botPickName.innerText = "SCISSORS";
-        botPickImg.setAttribute("src","/images/scissors.png");
+        botPickImg.setAttribute("src","../images/scissors.png");
         botPickImg.classList.remove("pick-img");
         botPickImg.classList.remove("bot-img");
         botPickImg.classList.add("pick-scissors-img");
@@ -65,7 +65,7 @@ const roundChanges = () => {
 
 const box1 = boxes[0].onclick = () => {
     userPickName.innerText = "ROCK";
-    userPickImg.setAttribute("src","/images/rock.png");
+    userPickImg.setAttribute("src","../images/rock.png");
     userPickImg.classList.add("pick-img");
     userPickImg.classList.remove("user-img");
     userPickImg.classList.remove("pick-scissors-img");
@@ -74,7 +74,7 @@ const box1 = boxes[0].onclick = () => {
 
 const box2 = boxes[1].onclick = () => {
     userPickName.innerText = "PAPER";
-    userPickImg.setAttribute("src","/images/paper.png");
+    userPickImg.setAttribute("src","../images/paper.png");
     userPickImg.classList.add("pick-img");
     userPickImg.classList.remove("user-img");
     userPickImg.classList.remove("pick-scissors-img");
@@ -83,7 +83,7 @@ const box2 = boxes[1].onclick = () => {
 
 const box3 = boxes[2].onclick = () => {
     userPickName.innerText = "SCISSORS";
-    userPickImg.setAttribute("src","/images/scissors.png");
+    userPickImg.setAttribute("src","../images/scissors.png");
     userPickImg.classList.remove("pick-img");
     userPickImg.classList.remove("user-img");
     userPickImg.classList.add("pick-scissors-img");
@@ -152,13 +152,13 @@ newGameBtn.onclick = () => {
     userPickImg.classList.remove("pick-img");
     userPickImg.classList.remove("pick-scissors-img");
     userPickImg.classList.add("user-img");
-    userPickImg.setAttribute("src","/images/user.png");
+    userPickImg.setAttribute("src","../images/user.png");
 
     botPickName.innerText = "BOT";
     botPickImg.classList.remove("pick-img");
     botPickImg.classList.remove("pick-scissors-img");
     botPickImg.classList.add("bot-img");
-    botPickImg.setAttribute("src","/images/bot.png");
+    botPickImg.setAttribute("src","../images/bot.png");
 
     msg.innerText = "PICK YOUR MOVE AND START THE GAME!!";
 
