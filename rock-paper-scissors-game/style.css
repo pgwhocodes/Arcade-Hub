@@ -237,8 +237,8 @@ body    {
 @media  (max-width: 570px) {
 
     .heading {
-        font-size: 4.3vmin;
-        line-height: 11vmin;
+        font-size: 5vmin;
+        line-height: 14vmin;
     } 
     .game-status {
         font-size: 3vmin;

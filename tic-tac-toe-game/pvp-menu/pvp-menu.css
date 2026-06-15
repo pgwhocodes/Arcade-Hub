@@ -120,8 +120,8 @@ main{
 @media  (max-width: 550px)  {
 
     header {
-        font-size: 4.3vmin;
-        line-height: 11vmin;
+        font-size: 5vmin;
+        line-height: 14vmin;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
     }
     main    {

@@ -98,12 +98,12 @@ main {
 @media (max-width: 650px)   {
 
     header {
-        font-size: 4.3vmin;
-        line-height: 11vmin;
+        font-size: 5vmin;
+        line-height: 14vmin;
     } 
 
     main    {
-        margin-top: 30vmin;
+        margin-top: 35vmin;
         row-gap: 10vmin;
     }
 
