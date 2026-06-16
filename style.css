@@ -51,8 +51,10 @@ main {
     align-content: center;
     text-align: center;
     align-items: center;
+    justify-content: center;
     font-weight: bold;
-    margin-top: 18vmin;
+    width: 100%;
+    height: 95%;
 }
 
 .outer-div  {
@@ -103,7 +105,6 @@ main {
     } 
 
     main    {
-        margin-top: 58vmin;
         row-gap: 10vmin;
     }
 
